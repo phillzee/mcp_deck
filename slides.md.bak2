@@ -1,0 +1,896 @@
+---
+theme: default
+background: 'https://cdn.sanity.io/images/4zrzovbb/website/3aabd8804251c0364cbde9d2e4be6dc8e8c2faec-2880x1620.png'
+class: 'text-center'
+highlighter: shiki
+lineNumbers: false
+info: |
+  ## Model Context Protocol (MCP)
+  A Developer's Guide to Seamless AI Integration
+drawings:
+  enabled: false
+  persist: false
+transition: slide-left
+css: unocss
+title: Model Context Protocol (MCP)
+mdc: true
+---
+
+# Model Context Protocol
+
+<!-- <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y--50">
+  <h2 class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+    Seamless AI Integration
+  </h2>
+</div> -->
+
+<div class="abs-br m-6 flex gap-2">
+  <a href="https://modelcontextprotocol.io" target="_blank" alt="MCP Website"
+    class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
+    <i-carbon-logo-github />
+  </a>
+</div>
+
+<!--
+Presenter note: Welcome slide with gradient text effect
+-->
+
+
+
+---
+layout: image-right
+image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80'
+---
+
+# The Challenge
+
+<v-clicks>
+
+<div class="flex items-center mb-6">
+  <div class="mr-4 p-3 rounded-full bg-red-500 bg-opacity-20">
+    <i-carbon-warning-alt class="text-2xl text-red-500"/>
+  </div>
+  <div class="flex-1">
+    <div class="font-bold mb-1">Fragmented AI Landscape</div>
+    <div class="text-sm opacity-80">Multiple AI providers, each with unique APIs, authentication methods, and data formats, making integration complex and time-consuming.</div>
+  </div>
+</div>
+
+<div class="flex items-center mb-6">
+  <div class="mr-4 p-3 rounded-full bg-orange-500 bg-opacity-20">
+    <i-carbon-development class="text-2xl text-orange-500"/>
+  </div>
+  <div class="flex-1">
+    <div class="font-bold mb-1">Complex Integration</div>
+    <div class="text-sm opacity-80">Diverse tooling, context management, and unique response handling create development overhead for custom implementations.</div>
+  </div>
+</div>
+
+<div class="flex items-center mb-6">
+  <div class="mr-4 p-3 rounded-full bg-yellow-500 bg-opacity-20">
+    <i-carbon-security class="text-2xl text-yellow-500"/>
+  </div>
+  <div class="flex-1">
+    <div class="font-bold mb-1">Security Concerns</div>
+    <div class="text-sm opacity-80">Data privacy, access control, and secure communication channels pose critical challenges when integrating AI capabilities.</div>
+  </div>
+</div>
+
+</v-clicks>
+
+<div class="mt-8 grid grid-cols-3 gap-4">
+  <div v-click class="text-center p-4 rounded-lg bg-red-500 bg-opacity-10">
+    <i-carbon-cloud-services class="text-3xl text-red-400 mb-2"/>
+    <div class="text-sm opacity-80">Growing Number of AI Services</div>
+  </div>
+  <div v-click class="text-center p-4 rounded-lg bg-orange-500 bg-opacity-10">
+    <i-carbon-time class="text-3xl text-orange-400 mb-2"/>
+    <div class="text-sm opacity-80">Increasing application complexity</div>
+  </div>
+  <div v-click class="text-center p-4 rounded-lg bg-yellow-500 bg-opacity-10">
+    <i-carbon-shield class="text-3xl text-yellow-400 mb-2"/>
+    <div class="text-sm opacity-80">Development time and costs rise</div>
+  </div>
+</div>
+
+---
+layout: fact
+---
+
+<div class="text-center">
+  <h1 class="text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+    Enter MCP
+  </h1>
+  <p class="mt-4 text-2xl opacity-80">Model Context Protocol</p>
+  <p class="mt-2 text-xl opacity-60">The missing standard for AI integration</p>
+</div>
+
+<!-- 
+This is where Model Context Protocol comes in - a standardized approach to solve these challenges.
+-->
+
+---
+layout: default
+---
+
+# What is MCP?
+
+<div 
+  class="text-center transition-all duration-500 absolute left-1/2 transform -translate-x-1/2"
+  :class="{ 'top-1/2 -translate-y-1/2': $slidev.nav.clicks === 0, 'top-24': $slidev.nav.clicks > 0 }"
+>
+  <p class="text-xl max-w-4xl w-[800px] font-bold text-black">
+    MCP is an open protocol that enables seamless integration between AI apps and agents and tools and data sources
+  </p>
+</div>
+
+<div 
+  v-if="$slidev.nav.clicks > 0" 
+  class="relative mt-28 p-6 rounded-lg overflow-hidden animate-fade-in"
+>
+  <div class="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg"></div>
+  <div class="relative z-10">
+    <div class="flex items-center justify-center mb-4">
+      <div class="text-center">
+        <i-carbon-api-1 class="text-5xl text-blue-400 inline-block"/>
+        <i-carbon-arrow-right class="text-3xl text-gray-400 mx-2 inline-block"/>
+        <i-carbon-application-web class="text-5xl text-green-400 inline-block"/>
+        <p class="mt-2 font-bold text-lg">APIs in Web Development</p>
+        <p class="text-sm opacity-80">Connect applications to data and services</p>
+      </div>
+      <div class="mx-8 text-3xl opacity-30">=</div>
+      <div class="text-center">
+        <i-carbon-machine-learning-model class="text-5xl text-purple-400 inline-block"/>
+        <i-carbon-arrow-right class="text-3xl text-gray-400 mx-2 inline-block"/>
+        <i-carbon-tool-kit class="text-5xl text-pink-400 inline-block"/>
+        <p class="mt-2 font-bold text-lg">MCP in AI Ecosystem</p>
+        <p class="text-sm opacity-80">Connects AI applications to tools and data</p>
+      </div>
+    </div>
+    <!-- 
+    Just as APIs provide a standardized way for web applications to interact with data services, MCP offers a uniform interface for LLMs and generative AI to access tools, context, and data sources - eliminating the need for custom integration with each AI provider.
+    -->
+  </div>
+</div>
+
+<div v-click class="mt-8 grid grid-cols-3 gap-4" :class="{ 'opacity-0': $slidev.nav.clicks < 1, 'opacity-100 transition-opacity duration-500 delay-300': $slidev.nav.clicks >= 1 }">
+  <div class="relative group p-4 rounded-lg overflow-hidden transition-all duration-500 hover:scale-105">
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-blue-700/30 group-hover:opacity-100 transition-opacity"></div>
+    <div class="relative z-10">
+      <i-carbon-api class="text-4xl mb-3 text-blue-400"/>
+      <div class="font-bold text-xl mb-2">Open Standard</div>
+      <div class="text-sm opacity-80 leading-relaxed">An open protocol designed for community adoption and extension</div>
+    </div>
+  </div>
+  
+  <div class="relative group p-4 rounded-lg overflow-hidden transition-all duration-500 hover:scale-105">
+    <div class="absolute inset-0 bg-gradient-to-br from-green-500/30 to-green-700/30 group-hover:opacity-100 transition-opacity"></div>
+    <div class="relative z-10">
+      <i-carbon-tool-kit class="text-4xl mb-3 text-green-400"/>
+      <div class="font-bold text-xl mb-2">Tool Integration</div>
+      <div class="text-sm opacity-80 leading-relaxed">Securely connect AI with your application's tools and capabilities</div>
+    </div>
+  </div>
+  
+  <div class="relative group p-4 rounded-lg overflow-hidden transition-all duration-500 hover:scale-105">
+    <div class="absolute inset-0 bg-gradient-to-br from-purple-500/30 to-purple-700/30 group-hover:opacity-100 transition-opacity"></div>
+    <div class="relative z-10">
+      <i-carbon-data-enrichment class="text-4xl mb-3 text-purple-400"/>
+      <div class="font-bold text-xl mb-2">Data Access</div>
+      <div class="text-sm opacity-80 leading-relaxed">Controlled access to application resources and contextual data</div>
+    </div>
+  </div>
+</div>
+
+<style>
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+
+---
+layout: default
+---
+
+# Core Architecture
+
+<div class="mt-15 h-[200px] flex items-center justify-center">
+
+```mermaid {theme: 'neutral', scale: 0.5}
+graph TB
+    subgraph Host["Host Application (e.g., IDE, Claude Desktop)"]
+        H[Host Application]
+        subgraph Client["MCP Client"]
+            CL[Client Layer]
+            CPL[Protocol Layer]
+            CTL[Transport Layer]
+            CL --> CPL --> CTL
+        end
+        H --- CL
+    end
+    
+    subgraph Server["MCP Server"]
+        SL[Server Layer]
+        SPL[Protocol Layer]
+        STL[Transport Layer]
+        
+        SL --> SPL --> STL
+        
+        subgraph Capabilities["Server Capabilities"]
+            CAP1[Resources]
+            CAP2[Tools]
+            CAP3[Context]
+            CAP4[Prompts]
+            
+            SL --> CAP1
+            SL --> CAP2
+            SL --> CAP3
+            SL --> CAP4
+        end
+    end
+    
+    %% Communication Channels
+    CTL <--> |JSON-RPC 2.0| STL
+    
+    %% Transport Options
+    subgraph Transport["Transport Mechanisms"]
+        T1[Stdio Transport]
+        T2[HTTP with SSE]
+        
+        T1 --> CTL
+        T2 --> CTL
+    end
+    
+    %% Styling
+    classDef default fill:#2A2A2A,stroke:#666,stroke-width:6px,color:#fff
+    classDef primary fill:#3b82f6,stroke:#60a5fa,stroke-width:6px,color:#fff
+    classDef secondary fill:#10b981,stroke:#34d399,stroke-width:6px,color:#fff
+    classDef tertiary fill:#8b5cf6,stroke:#a78bfa,stroke-width:6px,color:#fff
+    classDef container fill:transparent,stroke:#666,stroke-width:2px
+    
+    class H,CL,SL primary
+    class CPL,SPL,CTL,STL secondary
+    class CAP1,CAP2,CAP3,CAP4 tertiary
+    class T1,T2 secondary
+    class Host,Client,Server,Capabilities,Transport container
+
+    %% Add thicker lines for connections
+    linkStyle default stroke-width:3px
+```
+
+</div>
+
+<div class="mt-20 grid grid-cols-3 gap-4">
+  <div v-click class="relative group p-4 rounded-lg overflow-hidden transition-all duration-500 hover:scale-105">
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-blue-700/30 group-hover:opacity-100 transition-opacity"></div>
+    <div class="relative z-10">
+      <i-carbon-application-web class="text-3xl mb-2 text-blue-400"/>
+      <div class="font-bold">Host Layer</div>
+      <div class="text-sm opacity-80">LLM Applications that want to access data through MCP</div>
+    </div>
+  </div>
+  <div v-click class="relative group p-4 rounded-lg overflow-hidden transition-all duration-500 hover:scale-105">
+    <div class="absolute inset-0 bg-gradient-to-br from-green-500/30 to-green-700/30 group-hover:opacity-100 transition-opacity"></div>
+    <div class="relative z-10">
+      <i-carbon-connect class="text-3xl mb-2 text-green-400"/>
+      <div class="font-bold">Client Layer</div>
+      <div class="text-sm opacity-80">Maintains and manages 1:1 connections to MCP Servers</div>
+    </div>
+  </div>
+  <div v-click class="relative group p-4 rounded-lg overflow-hidden transition-all duration-500 hover:scale-105">
+    <div class="absolute inset-0 bg-gradient-to-br from-purple-500/30 to-purple-700/30 group-hover:opacity-100 transition-opacity"></div>
+    <div class="relative z-10">
+      <i-carbon-machine-learning-model class="text-3xl mb-2 text-purple-400"/>
+      <div class="font-bold">Server Layer</div>
+      <div class="text-sm opacity-80">Provides data, tools and prompts to Clients</div>
+    </div>
+  </div>
+</div>
+
+---
+layout: default
+---
+
+# Key Components
+
+<div class="mt-10 grid grid-cols-2 gap-8">
+  <div v-click class="relative group">
+    <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-green-500 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
+    <div class="relative p-6 bg-gray-900 rounded-lg border border-blue-500/30">
+      <h3 class="text-xl font-bold mb-4 text-blue-400">Protocol Layer</h3>
+      <div class="space-y-2 text-sm">
+        <div class="flex items-center text-gray-200">
+          <i-carbon-data-share class="mr-2 text-blue-400"/> Message Framing & Routing
+        </div>
+        <div class="flex items-center text-gray-200">
+          <i-carbon-connect class="mr-2 text-blue-400"/> Request/Response Management
+        </div>
+        <div class="flex items-center text-gray-200">
+          <i-carbon-flow class="mr-2 text-blue-400"/> Communication Patterns
+        </div>
+        <div class="flex items-center text-gray-200">
+          <i-carbon-certificate class="mr-2 text-blue-400"/> Versioned Protocol Schemas
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div v-click class="relative group">
+    <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
+    <div class="relative p-6 bg-gray-900 rounded-lg border border-purple-500/30">
+      <h3 class="text-xl font-bold mb-4 text-purple-400">Transport Layer</h3>
+      <div class="space-y-2 text-sm">
+        <div class="flex items-center text-gray-200">
+          <i-carbon-code class="mr-2 text-purple-400"/> JSON-RPC 2.0 Wire Format
+        </div>
+        <div class="flex items-center text-gray-200">
+          <i-carbon-data-transformer class="mr-2 text-purple-400"/> Protocol Message Transmission
+        </div>
+        <div class="flex items-center text-gray-200">
+          <i-carbon-terminal class="mr-2 text-purple-400"/> Multiple Transport Methods
+        </div>
+        <div class="flex items-center text-gray-200">
+          <i-carbon-plug class="mr-2 text-purple-400"/> Extensible Channel System
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div v-click class="mt-8">
+  <div class="relative group">
+    <div class="absolute -inset-0.5 bg-gradient-to-r from-yellow-500 to-red-500 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
+    <div class="relative p-6 bg-gray-900 rounded-lg border border-yellow-500/30">
+      <h3 class="text-xl font-bold mb-4 text-yellow-400">Primitives</h3>
+      <div class="grid grid-cols-4 gap-4 text-sm">
+        <div class="text-center">
+          <i-carbon-document class="text-2xl mb-2 mx-auto text-yellow-400"/> 
+          <div class="text-gray-200">Resources</div>
+          <div class="text-xs text-gray-400">Application-controlled</div>
+        </div>
+        <div class="text-center">
+          <i-carbon-tool-kit class="text-2xl mb-2 mx-auto text-yellow-400"/> 
+          <div class="text-gray-200">Tools</div>
+          <div class="text-xs text-gray-400">Model-controlled</div>
+        </div>
+        <div class="text-center">
+          <i-carbon-chat class="text-2xl mb-2 mx-auto text-yellow-400"/> 
+          <div class="text-gray-200">Sampling</div>
+          <div class="text-xs text-gray-400">Server Side LLM Completions</div>
+        </div>
+        <div class="text-center">
+          <i-carbon-text-creation class="text-2xl mb-2 mx-auto text-yellow-400"/> 
+          <div class="text-gray-200">Prompts</div>
+          <div class="text-xs text-gray-400">User-controlled</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+layout: two-cols
+class: 'items-center'
+---
+
+# Developer Benefits
+
+<div class="space-y-4 mr-4">
+  <div v-click class="flex items-start p-3 rounded-lg bg-gradient-to-r from-blue-500/20 to-blue-600/10">
+    <i-carbon-time class="text-2xl mr-3 text-blue-400 flex-shrink-0 mt-1"/>
+    <div>
+      <div class="font-bold text-lg">Reduced Development Time</div>
+      <div class="text-sm opacity-80 leading-relaxed">Standardized integration with any AI model through a single protocol, eliminating custom API integration for each provider.</div>
+    </div>
+  </div>
+  
+  <div v-click class="flex items-start p-3 rounded-lg bg-gradient-to-r from-green-500/20 to-green-600/10">
+    <i-carbon-chart-multitype class="text-2xl mr-3 text-green-400 flex-shrink-0 mt-1"/>
+    <div>
+      <div class="font-bold text-lg">Model Agnostic</div>
+      <div class="text-sm opacity-80 leading-relaxed">Build once, connect to any AI model - seamlessly switch between providers without rewriting integration code.</div>
+    </div>
+  </div>
+  
+  <div v-click class="flex items-start p-3 rounded-lg bg-gradient-to-r from-purple-500/20 to-purple-600/10">
+    <i-carbon-security class="text-2xl mr-3 text-purple-400 flex-shrink-0 mt-1"/>
+    <div>
+      <div class="font-bold text-lg">Enhanced Security</div>
+      <div class="text-sm opacity-80 leading-relaxed">Fine-grained access control for resources and tools with built-in permission management for AI model interactions.</div>
+    </div>
+  </div>
+</div>
+
+::right::
+
+<div class="space-y-4 ml-4">
+  <div v-click class="flex items-start p-3 rounded-lg bg-gradient-to-r from-yellow-500/20 to-yellow-600/10">
+    <i-carbon-code class="text-2xl mr-3 text-yellow-400 flex-shrink-0 mt-1"/>
+    <div>
+      <div class="font-bold text-lg">Simplified Integration</div>
+      <div class="text-sm opacity-80 leading-relaxed">Clean, well-defined interfaces between AI capabilities and application data with standardized schemas.</div>
+    </div>
+  </div>
+  
+  <div v-click class="flex items-start p-3 rounded-lg bg-gradient-to-r from-red-500/20 to-red-600/10">
+    <i-carbon-collaborate class="text-2xl mr-3 text-red-400 flex-shrink-0 mt-1"/>
+    <div>
+      <div class="font-bold text-lg">Community Support</div>
+      <div class="text-sm opacity-80 leading-relaxed">Leverage the growing ecosystem of MCP-compatible tools, libraries, and best practices across programming languages.</div>
+    </div>
+  </div>
+  
+  <div v-click class="flex items-start p-3 rounded-lg bg-gradient-to-r from-indigo-500/20 to-indigo-600/10">
+    <i-carbon-growth class="text-2xl mr-3 text-indigo-400 flex-shrink-0 mt-1"/>
+    <div>
+      <div class="font-bold text-lg">Future-Proof Design</div>
+      <div class="text-sm opacity-80 leading-relaxed">Evolving protocol with versioned schemas ensures compatibility as AI technologies advance and new capabilities emerge.</div>
+    </div>
+  </div>
+</div>
+
+<!-- 
+This slide highlights the tangible benefits that developers gain by adopting MCP. By focusing on time savings, simplified integration, and future-proofing, we address the core concerns of developers evaluating new technologies.
+-->
+
+---
+layout: default
+---
+
+# Code Example: Basic MCP Server
+
+<div class="mb-4">
+  <div class="text-xl font-semibold mb-2 text-green-400">Simple TypeScript MCP Server Implementation</div>
+</div>
+
+<div class="grid grid-cols-12 gap-4">
+  <div class="col-span-7">
+    <div v-click class="relative">
+      <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-green-500 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
+      <div class="relative overflow-hidden rounded-lg bg-gray-900 p-4 border border-blue-500/30">
+        <div class="text-xs text-gray-400 mb-2">server.ts</div>
+
+```ts {all|2-5|7-16|18-26|all}
+import { MCPServer, StdioTransport } from '@mcp/server';
+
+// 1. Define your tool handlers
+const mathTools = {
+  add: async ({ a, b }) => a + b,
+  multiply: async ({ a, b }) => a * b
+};
+
+// 2. Create server with stdio transport
+const server = new MCPServer({
+  transport: new StdioTransport(),
+  capabilities: {
+    tools: {
+      math: mathTools
+    }
+  }
+});
+
+// 3. Start the server
+server.start().then(() => {
+  console.log('MCP Server started successfully');
+}).catch(error => {
+  console.error('Failed to start MCP server:', error);
+  process.exit(1);
+});
+```
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-span-5">
+    <div v-click class="relative mb-4">
+      <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
+      <div class="relative overflow-hidden rounded-lg bg-gray-900 p-4 border border-purple-500/30">
+        <div class="text-xs text-gray-400 mb-2">Client usage example</div>
+
+```ts {all}
+// Client code using the MCP tools
+const result = await client.invokeToolCall({
+  method: "math.add",
+  params: { a: 5, b: 3 }
+});
+
+console.log(result); // 8
+```
+
+      </div>
+    </div>
+    
+    <div v-click class="p-4 rounded-lg bg-green-500/10 border border-green-500/30">
+      <h3 class="text-lg font-bold text-green-400 mb-2">Key Implementation Steps</h3>
+      <ul class="space-y-2 text-sm">
+        <li class="flex items-start">
+          <i-carbon-checkmark-outline class="text-green-400 mr-2 mt-1 flex-shrink-0"/>
+          <span>Define tool handlers as async functions</span>
+        </li>
+        <li class="flex items-start">
+          <i-carbon-checkmark-outline class="text-green-400 mr-2 mt-1 flex-shrink-0"/>
+          <span>Configure transport mechanism (Stdio, HTTP)</span>
+        </li>
+        <li class="flex items-start">
+          <i-carbon-checkmark-outline class="text-green-400 mr-2 mt-1 flex-shrink-0"/>
+          <span>Register capabilities with the server</span>
+        </li>
+        <li class="flex items-start">
+          <i-carbon-checkmark-outline class="text-green-400 mr-2 mt-1 flex-shrink-0"/>
+          <span>Start server and handle lifecycle events</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- 
+This example shows how quickly developers can get started with MCP. With just a few lines of code, you can create a server that exposes tools to AI models through a standardized interface.
+
+The code is organized into three clear sections:
+1. Defining tool handlers (the actual functionality)
+2. Creating and configuring the MCP server
+3. Starting the server and handling lifecycle events
+
+This modular approach makes it easy to extend and maintain as your application grows.
+-->
+
+---
+layout: image-right
+image: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?q=80'
+---
+
+# Real-world Use Cases
+
+<div class="space-y-5">
+  <div v-click class="p-4 rounded-lg bg-gradient-to-r from-blue-500/20 to-cyan-500/10 border border-blue-500/30">
+    <div class="flex items-center mb-2">
+      <i-carbon-application class="text-3xl text-blue-400 mr-3"/>
+      <h3 class="font-bold text-lg">IDE Extensions</h3>
+    </div>
+    <p class="text-sm opacity-80">Connect AI code assistants to your IDE for context-aware code generation, refactoring, and documentation with full access to the developer's workspace.</p>
+  </div>
+  
+  <div v-click class="p-4 rounded-lg bg-gradient-to-r from-green-500/20 to-emerald-500/10 border border-green-500/30">
+    <div class="flex items-center mb-2">
+      <i-carbon-ibm-watson-knowledge-catalog class="text-3xl text-green-400 mr-3"/>
+      <h3 class="font-bold text-lg">Knowledge Management Systems</h3>
+    </div>
+    <p class="text-sm opacity-80">Create AI agents that securely access company knowledge bases, documentation, and private data to provide accurate, contextual information to users.</p>
+  </div>
+  
+  <div v-click class="p-4 rounded-lg bg-gradient-to-r from-purple-500/20 to-indigo-500/10 border border-purple-500/30">
+    <div class="flex items-center mb-2">
+      <i-carbon-notebook-reference class="text-3xl text-purple-400 mr-3"/>
+      <h3 class="font-bold text-lg">Data Analysis Notebooks</h3>
+    </div>
+    <p class="text-sm opacity-80">Connect AI assistants to Jupyter notebooks for interactive analysis, visualization suggestions, and code generation with direct access to dataframes and results.</p>
+  </div>
+  
+  <div v-click class="p-4 rounded-lg bg-gradient-to-r from-red-500/20 to-orange-500/10 border border-red-500/30">
+    <div class="flex items-center mb-2">
+      <i-carbon-application-web class="text-3xl text-red-400 mr-3"/>
+      <h3 class="font-bold text-lg">CRM & Productivity Tools</h3>
+    </div>
+    <p class="text-sm opacity-80">Enable AI assistants to interact with customer data, calendars, and business systems to automate workflows and provide intelligent recommendations.</p>
+  </div>
+</div>
+
+<!--
+These use cases demonstrate MCP's versatility across different application domains. In each case, MCP provides the critical bridge between AI capabilities and domain-specific data and functionality.
+
+For example, in IDE extensions, MCP allows AI assistants to access the developer's codebase, runtime environment, and project structure - making code suggestions more relevant and contextual.
+-->
+
+---
+layout: default
+---
+
+# Getting Started with MCP
+
+<div class="grid grid-cols-3 gap-6 mt-8">
+  <div v-click class="relative">
+    <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl blur opacity-25"></div>
+    <div class="relative h-full flex flex-col rounded-xl bg-gray-900 p-6 border border-blue-500/30">
+      <div class="mb-4 flex items-center">
+        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-blue-500/20 text-blue-400">
+          <i-carbon-number-1 class="text-2xl"/>
+        </div>
+        <h3 class="ml-3 text-xl font-bold">Choose Your Stack</h3>
+      </div>
+      <div class="text-sm opacity-80 mb-3 flex-grow">Select the appropriate language SDK for your application:</div>
+      <div class="grid grid-cols-2 gap-2 text-sm">
+        <div class="px-3 py-2 rounded bg-blue-500/10 flex items-center">
+          <i-logos-typescript-icon class="mr-2"/> TypeScript
+        </div>
+        <div class="px-3 py-2 rounded bg-blue-500/10 flex items-center">
+          <i-logos-python class="mr-2"/> Python
+        </div>
+        <div class="px-3 py-2 rounded bg-blue-500/10 flex items-center">
+          <i-logos-rust class="mr-2"/> Rust
+        </div>
+        <div class="px-3 py-2 rounded bg-blue-500/10 flex items-center">
+          <i-logos-go class="mr-2"/> Go
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div v-click class="relative">
+    <div class="absolute -inset-1 bg-gradient-to-r from-green-500 to-green-700 rounded-xl blur opacity-25"></div>
+    <div class="relative h-full flex flex-col rounded-xl bg-gray-900 p-6 border border-green-500/30">
+      <div class="mb-4 flex items-center">
+        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-green-500/20 text-green-400">
+          <i-carbon-number-2 class="text-2xl"/>
+        </div>
+        <h3 class="ml-3 text-xl font-bold">Define Capabilities</h3>
+      </div>
+      <div class="text-sm opacity-80 mb-3 flex-grow">Implement and register your application's capabilities:</div>
+      <ul class="space-y-2 text-sm">
+        <li class="flex items-start">
+          <i-carbon-checkmark class="text-green-400 mr-2 mt-1"/>
+          <span>Define tool handlers with clear schemas</span>
+        </li>
+        <li class="flex items-start">
+          <i-carbon-checkmark class="text-green-400 mr-2 mt-1"/>
+          <span>Configure resource providers</span>
+        </li>
+        <li class="flex items-start">
+          <i-carbon-checkmark class="text-green-400 mr-2 mt-1"/>
+          <span>Set up prompt templates</span>
+        </li>
+        <li class="flex items-start">
+          <i-carbon-checkmark class="text-green-400 mr-2 mt-1"/>
+          <span>Implement authorization policies</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div v-click class="relative">
+    <div class="absolute -inset-1 bg-gradient-to-r from-purple-500 to-purple-700 rounded-xl blur opacity-25"></div>
+    <div class="relative h-full flex flex-col rounded-xl bg-gray-900 p-6 border border-purple-500/30">
+      <div class="mb-4 flex items-center">
+        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-purple-500/20 text-purple-400">
+          <i-carbon-number-3 class="text-2xl"/>
+        </div>
+        <h3 class="ml-3 text-xl font-bold">Deploy & Connect</h3>
+      </div>
+      <div class="text-sm opacity-80 mb-3 flex-grow">Integrate your MCP server with AI applications:</div>
+      <div class="space-y-3">
+        <div class="p-3 rounded bg-purple-500/10">
+          <div class="font-bold mb-1">Transport Options</div>
+          <div class="text-xs opacity-80">
+            Choose stdio for process-based or HTTP/WebSockets for network-based integration
+          </div>
+        </div>
+        <div class="p-3 rounded bg-purple-500/10">
+          <div class="font-bold mb-1">Security Considerations</div>
+          <div class="text-xs opacity-80">
+            Implement authentication, permissions, and access controls for your MCP server
+          </div>
+        </div>
+        <div class="p-3 rounded bg-purple-500/10">
+          <div class="font-bold mb-1">Testing & Validation</div>
+          <div class="text-xs opacity-80">
+            Use MCP client libraries to test your implementation before production deployment
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div v-click class="mt-8 p-4 rounded-lg bg-gradient-to-r from-yellow-500/20 to-orange-500/10 border border-yellow-500/20">
+  <div class="flex items-center">
+    <i-carbon-education class="text-3xl text-yellow-400 mr-3"/>
+    <div>
+      <div class="font-bold">Resources</div>
+      <div class="text-sm opacity-80">Visit <a href="https://modelcontextprotocol.io" class="text-yellow-400 underline">modelcontextprotocol.io</a> for documentation, tutorials, community forums, and example code</div>
+    </div>
+  </div>
+</div>
+
+<!--
+This slide provides a clear, structured path for developers to implement MCP in their applications. The three-step process breaks down what might seem like a complex integration into manageable chunks:
+
+1. Choose the right SDK for your tech stack
+2. Define your application's capabilities in terms of MCP primitives
+3. Deploy your MCP server and connect it to AI applications
+
+The resources section at the bottom directs developers to further learning materials and community support.
+-->
+
+---
+layout: default
+---
+
+# MCP vs. Alternatives
+
+<div class="mt-6 overflow-hidden rounded-xl border border-blue-500/30">
+  <table class="w-full text-sm">
+    <thead>
+      <tr class="bg-blue-500/20">
+        <th class="p-3 text-left font-bold">Feature</th>
+        <th class="p-3 text-center font-bold">MCP</th>
+        <th class="p-3 text-center font-bold">Custom REST APIs</th>
+        <th class="p-3 text-center font-bold">Function Calling</th>
+        <th class="p-3 text-center font-bold">Plugins/Extensions</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-blue-500/10">
+      <tr v-click class="bg-gradient-to-r from-transparent to-blue-500/5 hover:bg-blue-500/10 transition-colors">
+        <td class="p-3 font-medium">Standard Protocol</td>
+        <td class="p-3 text-center text-green-400"><i-carbon-checkmark-filled class="inline-block"/></td>
+        <td class="p-3 text-center text-red-400"><i-carbon-close-filled class="inline-block"/></td>
+        <td class="p-3 text-center text-yellow-400"><i-carbon-warning class="inline-block"/></td>
+        <td class="p-3 text-center text-yellow-400"><i-carbon-warning class="inline-block"/></td>
+      </tr>
+      <tr v-click class="bg-gradient-to-r from-transparent to-blue-500/5 hover:bg-blue-500/10 transition-colors">
+        <td class="p-3 font-medium">Model Agnostic</td>
+        <td class="p-3 text-center text-green-400"><i-carbon-checkmark-filled class="inline-block"/></td>
+        <td class="p-3 text-center text-green-400"><i-carbon-checkmark-filled class="inline-block"/></td>
+        <td class="p-3 text-center text-red-400"><i-carbon-close-filled class="inline-block"/></td>
+        <td class="p-3 text-center text-red-400"><i-carbon-close-filled class="inline-block"/></td>
+      </tr>
+      <tr v-click class="bg-gradient-to-r from-transparent to-blue-500/5 hover:bg-blue-500/10 transition-colors">
+        <td class="p-3 font-medium">Bidirectional Communication</td>
+        <td class="p-3 text-center text-green-400"><i-carbon-checkmark-filled class="inline-block"/></td>
+        <td class="p-3 text-center text-yellow-400"><i-carbon-warning class="inline-block"/></td>
+        <td class="p-3 text-center text-red-400"><i-carbon-close-filled class="inline-block"/></td>
+        <td class="p-3 text-center text-yellow-400"><i-carbon-warning class="inline-block"/></td>
+      </tr>
+      <tr v-click class="bg-gradient-to-r from-transparent to-blue-500/5 hover:bg-blue-500/10 transition-colors">
+        <td class="p-3 font-medium">Rich Context Management</td>
+        <td class="p-3 text-center text-green-400"><i-carbon-checkmark-filled class="inline-block"/></td>
+        <td class="p-3 text-center text-yellow-400"><i-carbon-warning class="inline-block"/></td>
+        <td class="p-3 text-center text-red-400"><i-carbon-close-filled class="inline-block"/></td>
+        <td class="p-3 text-center text-yellow-400"><i-carbon-warning class="inline-block"/></td>
+      </tr>
+      <tr v-click class="bg-gradient-to-r from-transparent to-blue-500/5 hover:bg-blue-500/10 transition-colors">
+        <td class="p-3 font-medium">Type Safety & Schemas</td>
+        <td class="p-3 text-center text-green-400"><i-carbon-checkmark-filled class="inline-block"/></td>
+        <td class="p-3 text-center text-yellow-400"><i-carbon-warning class="inline-block"/></td>
+        <td class="p-3 text-center text-green-400"><i-carbon-checkmark-filled class="inline-block"/></td>
+        <td class="p-3 text-center text-red-400"><i-carbon-close-filled class="inline-block"/></td>
+      </tr>
+      <tr v-click class="bg-gradient-to-r from-transparent to-blue-500/5 hover:bg-blue-500/10 transition-colors">
+        <td class="p-3 font-medium">Developer Experience</td>
+        <td class="p-3 text-center text-green-400"><i-carbon-checkmark-filled class="inline-block"/></td>
+        <td class="p-3 text-center text-yellow-400"><i-carbon-warning class="inline-block"/></td>
+        <td class="p-3 text-center text-green-400"><i-carbon-checkmark-filled class="inline-block"/></td>
+        <td class="p-3 text-center text-yellow-400"><i-carbon-warning class="inline-block"/></td>
+      </tr>
+      <tr v-click class="bg-gradient-to-r from-transparent to-blue-500/5 hover:bg-blue-500/10 transition-colors">
+        <td class="p-3 font-medium">Implementation Complexity</td>
+        <td class="p-3 text-center text-green-400">Low</td>
+        <td class="p-3 text-center text-red-400">High</td>
+        <td class="p-3 text-center text-green-400">Low</td>
+        <td class="p-3 text-center text-red-400">High</td>
+      </tr>
+      <tr v-click class="bg-gradient-to-r from-transparent to-blue-500/5 hover:bg-blue-500/10 transition-colors">
+        <td class="p-3 font-medium">Security Controls</td>
+        <td class="p-3 text-center text-green-400"><i-carbon-checkmark-filled class="inline-block"/></td>
+        <td class="p-3 text-center text-yellow-400"><i-carbon-warning class="inline-block"/></td>
+        <td class="p-3 text-center text-red-400"><i-carbon-close-filled class="inline-block"/></td>
+        <td class="p-3 text-center text-yellow-400"><i-carbon-warning class="inline-block"/></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div v-click class="mt-6 grid grid-cols-2 gap-4">
+  <div class="p-4 rounded-lg bg-green-500/10 border border-green-500/30">
+    <h3 class="font-bold text-green-400 mb-2">MCP Advantages</h3>
+    <ul class="space-y-1 text-sm">
+      <li class="flex items-start">
+        <i-carbon-arrow-right class="text-green-400 mr-2 mt-1 flex-shrink-0"/>
+        <span>Provides a standardized protocol that works with any LLM provider</span>
+      </li>
+      <li class="flex items-start">
+        <i-carbon-arrow-right class="text-green-400 mr-2 mt-1 flex-shrink-0"/>
+        <span>Built-in semantic schemas ensure type safety and validation</span>
+      </li>
+      <li class="flex items-start">
+        <i-carbon-arrow-right class="text-green-400 mr-2 mt-1 flex-shrink-0"/>
+        <span>Robust permission model for secure AI integrations</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="p-4 rounded-lg bg-blue-500/10 border border-blue-500/30">
+    <h3 class="font-bold text-blue-400 mb-2">When to Choose MCP</h3>
+    <ul class="space-y-1 text-sm">
+      <li class="flex items-start">
+        <i-carbon-arrow-right class="text-blue-400 mr-2 mt-1 flex-shrink-0"/>
+        <span>When building applications that need to work with multiple AI models</span>
+      </li>
+      <li class="flex items-start">
+        <i-carbon-arrow-right class="text-blue-400 mr-2 mt-1 flex-shrink-0"/>
+        <span>For applications requiring bidirectional context sharing</span>
+      </li>
+      <li class="flex items-start">
+        <i-carbon-arrow-right class="text-blue-400 mr-2 mt-1 flex-shrink-0"/>
+        <span>When security and access control are critical requirements</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+---
+layout: fact
+---
+
+<div class="text-center">
+  <h1 class="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-green-400">
+    Join the MCP Ecosystem
+  </h1>
+</div>
+
+<div class="mt-10 grid grid-cols-3 gap-8">
+  <div v-click class="text-center">
+    <div class="mx-auto w-16 h-16 flex items-center justify-center rounded-full bg-blue-500/20">
+      <i-carbon-earth class="text-3xl text-blue-400"/>
+    </div>
+    <h3 class="mt-4 text-xl font-bold">Open Standard</h3>
+    <p class="mt-2 text-sm opacity-80">Contribute to an open ecosystem that's shaping the future of AI integration</p>
+  </div>
+  
+  <div v-click class="text-center">
+    <div class="mx-auto w-16 h-16 flex items-center justify-center rounded-full bg-purple-500/20">
+      <i-carbon-development class="text-3xl text-purple-400"/>
+    </div>
+    <h3 class="mt-4 text-xl font-bold">Developer First</h3>
+    <p class="mt-2 text-sm opacity-80">Built by developers, for developers, with simplicity and productivity in mind</p>
+  </div>
+  
+  <div v-click class="text-center">
+    <div class="mx-auto w-16 h-16 flex items-center justify-center rounded-full bg-green-500/20">
+      <i-carbon-growth class="text-3xl text-green-400"/>
+    </div>
+    <h3 class="mt-4 text-xl font-bold">Future Proof</h3>
+    <p class="mt-2 text-sm opacity-80">Designed to evolve with the rapidly changing AI landscape</p>
+  </div>
+</div>
+
+<div v-click class="mt-16 text-center">
+  <div class="inline-flex space-x-4">
+    <a href="https://github.com/modelcontext/mcp" class="px-6 py-3 rounded-full bg-blue-500 text-white font-bold hover:bg-blue-600 transition-colors">
+      <div class="flex items-center">
+        <i-carbon-logo-github class="mr-2"/> Star on GitHub
+      </div>
+    </a>
+    <a href="https://modelcontextprotocol.io/docs" class="px-6 py-3 rounded-full bg-purple-500 text-white font-bold hover:bg-purple-600 transition-colors">
+      <div class="flex items-center">
+        <i-carbon-document class="mr-2"/> Read the Docs
+      </div>
+    </a>
+    <a href="https://modelcontextprotocol.io/community" class="px-6 py-3 rounded-full bg-green-500 text-white font-bold hover:bg-green-600 transition-colors">
+      <div class="flex items-center">
+        <i-carbon-chat class="mr-2"/> Join the Community
+      </div>
+    </a>
+  </div>
+</div>
+
+<div v-click class="mt-10 text-center opacity-70 text-sm">
+  <p>Model Context Protocol • Open Source • MIT License</p>
+</div>
+
+<!--
+This final slide serves as both a summary of MCP's core value proposition and a clear call to action. By highlighting the three key pillars of MCP - its open standard nature, developer-first design philosophy, and future-proof architecture - we reinforce the main selling points.
+
+The prominent call-to-action buttons make it easy for interested developers to take the next step, whether that's exploring the code, reading the documentation, or joining the community.
+-->
