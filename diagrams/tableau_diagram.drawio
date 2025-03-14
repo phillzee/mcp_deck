@@ -1,0 +1,106 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.1.0">
+  <diagram name="Page-1" id="AvqvbqHfpZ8JQRiq0W2e">
+    <mxGraphModel dx="1026" dy="593" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;flowAnimation=1;curved=1;" edge="1" parent="1" source="1sJJKQHz4RUfYYNSVQgz-1" target="1sJJKQHz4RUfYYNSVQgz-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-10" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;1. User makes remapping&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;request to Claude and&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;optionally selects a prompt&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#FF6666;" vertex="1" connectable="0" parent="1sJJKQHz4RUfYYNSVQgz-9">
+          <mxGeometry x="-0.1958" y="1" relative="1" as="geometry">
+            <mxPoint x="2" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-1" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.user;" vertex="1" parent="1">
+          <mxGeometry x="250" y="120" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-2" value="" style="rounded=1;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="490" y="109" width="120" height="201" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-3" value="&lt;span style=&quot;font-family: &amp;quot;Comic Sans MS&amp;quot;;&quot;&gt;Claude Desktop&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="174" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-8" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://zorgle.co.uk/wp-content/uploads/2024/11/Claude-ai-logo.png;" vertex="1" parent="1">
+          <mxGeometry x="528" y="129" width="44" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-15" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;0. On start up Server&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;capabilities sent to client&lt;/font&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;flowAnimation=1;fontColor=#FF6666;" edge="1" parent="1" source="1sJJKQHz4RUfYYNSVQgz-11" target="1sJJKQHz4RUfYYNSVQgz-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-11" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="390" y="370" width="420" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-12" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Tableau Workbook MCP Server&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="525" y="384" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;flowAnimation=1;curved=1;" edge="1" parent="1" source="1sJJKQHz4RUfYYNSVQgz-14" target="1sJJKQHz4RUfYYNSVQgz-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-14" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Claude desktop Client&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="500" y="220" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-23" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="440" y="424" width="220" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-18" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Validate Workbook&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="455" y="469" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-19" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Validate Toml&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="455" y="509" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-20" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Extract Remappings&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="455" y="549" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-21" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Remap Workbook&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="455" y="589" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-22" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Write File&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="455" y="629" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-24" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Tools&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="434" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;flowAnimation=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="1sJJKQHz4RUfYYNSVQgz-25" target="1sJJKQHz4RUfYYNSVQgz-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-25" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="98" y="430" width="230" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-26" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;File system&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="138" y="440" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-27" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Tableau Workbook&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="118" y="474" width="80" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-28" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Tableau Workbook&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="228" y="474" width="80" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-29" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;new file&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="173" y="547.5" width="80" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-41" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="675" y="480" width="120" height="99" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-42" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Prompts&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="705" y="482" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-43" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Remap From toml&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="518" width="90" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-45" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;2. Claude looks at available tools&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;and creates a plan of how to&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;achieve users request&lt;br&gt;(prompt may instruct Claude what&lt;br&gt;tools to use)&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#FF6666;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="705" y="204.00454545454545" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-46" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;3. Claude calls one tool at a time&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;allowing it to use tool outputs&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;in following tool calls/change&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;approach based on outputs&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#FF6666;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="710" y="330.00454545454545" as="geometry" />
+        </mxCell>
+        <mxCell id="1sJJKQHz4RUfYYNSVQgz-47" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;4. Tools allow Claude access to&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;files needed to complete the task&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#FF6666;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="380.00000000000006" y="189.00454545454545" as="geometry">
+            <mxPoint x="-123" y="475" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
