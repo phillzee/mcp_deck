@@ -18,12 +18,6 @@ mdc: true
 
 # Model Context Protocol
 
-<!-- <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y--50">
-  <h2 class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
-    Seamless AI Integration
-  </h2>
-</div> -->
-
 <div class="abs-br m-6 flex gap-2">
   <a href="https://modelcontextprotocol.io" target="_blank" alt="MCP Website"
     class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
@@ -32,17 +26,19 @@ mdc: true
 </div>
 
 <!--
-Presenter note: Welcome slide with gradient text effect
+- Intro who I am
+- Have the best job - get to play with AI
+- making apps with AI
+- Phil and I feel MCP going to be more influential in the AI ecosystem than people realise
+- Want to show you a bit of what we’re seeing
 -->
-
-
 
 ---
 layout: image-right
-image: 'https://becomposable.com/hubfs/AI-Software-Marketscape-2025-01.jpg'
+image: 'diagrams/AI_Landscape.jpg'
 ---
 
-# The Challenge
+# The Integration Issue
 
 <v-clicks>
 
@@ -93,6 +89,14 @@ image: 'https://becomposable.com/hubfs/AI-Software-Marketscape-2025-01.jpg'
   </div>
 </div>
 
+<!--
+- Big issue in gen AI
+- How do we connect AI apps to external ones.
+- Lots of providers, 
+- More complex app needs, growing ambition and increased capabilities
+- data protection
+-->
+
 ---
 layout: fact
 ---
@@ -103,10 +107,14 @@ layout: fact
   </h1>
   <p class="mt-4 text-2xl opacity-80">Model Context Protocol</p>
   <p class="mt-2 text-xl opacity-60">The missing standard for AI integration</p>
+  <div class="absolute bottom-10 left-0 right-0 flex items-center justify-center">
+    <span class="mr-2 text-xl">by Anthropic</span>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Anthropic.png" alt="Anthropic Logo" class="h-10" />
+  </div>
 </div>
 
-<!-- 
-This is where Model Context Protocol comes in - a standardized approach to solve these challenges.
+<!--
+This is where Model Context Protocol, developed by anthropic comes in
 -->
 
 ---
@@ -121,7 +129,7 @@ transition: slide-up
   :class="{ 'top-1/2 -translate-y-1/2': $slidev.nav.clicks === 0, 'top-24': $slidev.nav.clicks > 0 }"
 >
   <p class="text-xl max-w-4xl w-[800px] font-bold text-gray-800">
-    MCP is an open source protocol that enables seamless integration between AI apps and agents and tools and data sources
+    MCP is an open source protocol that enables the seamless integration AI apps and agents with tools and data sources
   </p>
 </div>
 
@@ -136,8 +144,8 @@ transition: slide-up
         <i-carbon-api-1 class="text-5xl text-blue-400 inline-block"/>
         <i-carbon-arrow-right class="text-3xl text-gray-400 mx-2 inline-block"/>
         <i-carbon-application-web class="text-5xl text-green-400 inline-block"/>
-        <p class="mt-2 font-bold text-lg">APIs in Web Development</p>
-        <p class="text-sm opacity-80">Connect applications to data and services</p>
+        <p class="mt-2 font-bold text-lg">REST API in Web Development</p>
+        <p class="text-sm opacity-80">Connects web applications to data and services</p>
       </div>
       <div class="mx-8 text-3xl opacity-30">=</div>
       <div class="text-center">
@@ -200,6 +208,12 @@ transition: slide-up
 }
 </style>
 
+<!--
+- What does MCP Do?
+- MCP connects AI apps and agents, to tools and data sources
+- Is is for AI what REST API was for Web dev
+- Can also think like USB-C
+-->
 
 ---
 layout: image-right
@@ -290,8 +304,59 @@ Example: image: 'path/to/mcp-servers-screenshot.png'
 -->
 
 <!--
-This slide showcases the rapidly growing ecosystem of MCP servers. The official MCP servers repository has gained incredible traction with over 11,000 stars and 1,200+ forks on GitHub, demonstrating strong community interest. The community has extended beyond the official implementations, with hundreds of third-party servers being developed for diverse use cases from social media integration to financial services.
+- People are taking notice
+- Large collection of official integrations with large platforms
+- Constant growing eco system of comunity made servers such as:
 -->
+
+---
+layout: default
+---
+
+# MCP Flow in Composio
+
+<div class="absolute inset-0 mt-20 z-0 flex items-center justify-center overflow-hidden">
+  <img 
+    src="/diagrams/composio.png" 
+    class="max-w-[95%] max-h-[95%] object-contain"
+    alt="MCP Flow in Composio Diagram"
+  />
+</div>
+
+<!-- Replace the simple card with dynamic, visually engaging elements -->
+<div v-click class="absolute top-32 left-1/2 transform -translate-x-1/2 z-10 hover:rotate-0 transition-all duration-500">
+  <div class="relative group">
+    <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg blur opacity-60 group-hover:opacity-100 transition duration-500"></div>
+    <div class="relative p-5 bg-white/10 backdrop-blur-sm rounded-lg shadow-xl border border-blue-500/30">
+      <div class="flex items-center">
+        <i-carbon-logo-react class="text-3xl text-blue-400 mr-3 animate-pulse"/>
+        <div>
+          <div class="font-bold text-white text-center">Composio</div>
+          <div class="text-sm text-blue-200 text-center">Real products are starting to emerge, leveraging mcp</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+- Example of Apps getting made using MCP
+-->
+
+---
+layout: center
+class: "text-center"
+---
+
+# What Can an MCP do?
+
+<div class="flex items-center justify-center w-full h-full mt-[-20px]">
+  <img 
+    src="/diagrams/dashboard_prompt_demo.gif" 
+    class="max-w-full max-h-full object-contain"
+    alt="MCP Data Flow Diagram"
+  />
+</div>
 
 ---
 layout: fact
@@ -362,9 +427,8 @@ clicks: 1
 </div>
 
 <!--
-This slide demonstrates a dynamic animation where the focus shifts to the word "easy" 
-when advancing to the next slide state, emphasizing how straightforward MCP setup is.
-The animation happens in sequence: the word "easy" grows first, then moves to center.
+- If you want to start using MCP how hard is it to get it set up?
+EASY
 -->
 
 ---
@@ -391,12 +455,19 @@ transition: slide-up
   </div>
 </div>
 
+<!--
+Brave search example:
+- I hate that Claude desktop can't connect to the web. I can solve this in minutes. 
+
+Joke about me deleting the api key
+-->
+
 ---
 layout: center
 class: "text-center"
 ---
 
-# MCP Core
+# MCPs are not just for Claude
 
 <div class="flex justify-center items-center mt-4">
   <div class="relative w-[800px] h-[450px] flex items-center justify-center">
@@ -405,7 +476,12 @@ class: "text-center"
 </div>
 
 <!--
-This animated diagram illustrates the core components and data flow of the Model Context Protocol architecture.
+That was for Claude desktop, but there are much more uses.
+
+- Discuss architecture overview.
+- At IDE mention Cursor - this is mega
+- Think browser logs, no more having to copy and paste back and forth.
+- Think Postgres, increased visibility for AI means better code and faster debug.
 -->
 
 ---
@@ -512,12 +588,42 @@ layout: default
 transition: slide-up
 ---
 
-# How the MCP Client Works
+# MCP Client is not just an Interface
 
-<div class="mt-6 text-center">
-  <p class="text-xl max-w-3xl mx-auto text-gray-800">
-    <strong>THE BRIDGE BETWEEN YOUR APP AND MCP SERVERS</strong>
-  </p>
+<div class="mt-0 text-left">
+  <h3 class="text-lg text-gray-800">
+    It is a Fully Featured Middleware
+  </h3>
+</div>
+
+<div v-click class="relative group mt-8">
+  <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
+  <div class="relative p-4 bg-gray-900 rounded-lg border border-blue-500/30">
+    <div class="flex items-center justify-between">
+      <div class="w-1/3">
+        <div class="text-center">
+          <i-carbon-application class="text-5xl text-blue-400 inline-block"/>
+          <i-carbon-arrow-right class="text-2xl text-gray-400 mx-2 inline-block"/>
+          <i-carbon-machine-learning-model class="text-5xl text-green-400 inline-block"/>
+          <p class="mt-2 text-sm text-gray-300">Host App → LLM</p>
+        </div>
+      </div>
+      <div class="w-1/3 text-center">
+        <div class="font-bold text-xl mb-2 text-blue-400">MCP Client</div>
+        <div class="bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-lg p-3 text-sm text-gray-200">
+          Full-featured middleware that orchestrates communication, manages context, executes tools, and maintains session state
+        </div>
+      </div>
+      <div class="w-1/3">
+        <div class="text-center">
+          <i-carbon-machine-learning-model class="text-5xl text-green-400 inline-block"/>
+          <i-carbon-arrow-right class="text-2xl text-gray-400 mx-2 inline-block"/>
+          <i-carbon-tool-kit class="text-5xl text-purple-400 inline-block"/>
+          <p class="mt-2 text-sm text-gray-300">LLM → MCP Servers</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="grid grid-cols-5 gap-3 mt-8">
@@ -597,50 +703,11 @@ transition: slide-up
   </div>
 </div>
 
-<div v-click class="relative group mt-8">
-  <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
-  <div class="relative p-4 bg-gray-900 rounded-lg border border-blue-500/30">
-    <div class="flex items-center justify-between">
-      <div class="w-1/3">
-        <div class="text-center">
-          <i-carbon-application class="text-5xl text-blue-400 inline-block"/>
-          <i-carbon-arrow-right class="text-2xl text-gray-400 mx-2 inline-block"/>
-          <i-carbon-machine-learning-model class="text-5xl text-green-400 inline-block"/>
-          <p class="mt-2 text-sm text-gray-300">Host App → LLM</p>
-        </div>
-      </div>
-      <div class="w-1/3 text-center">
-        <div class="font-bold text-xl mb-2 text-blue-400">MCP Client</div>
-        <div class="bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-lg p-3 text-sm text-gray-200">
-          Full-featured middleware that orchestrates communication, manages context, executes tools, and maintains session state
-        </div>
-      </div>
-      <div class="w-1/3">
-        <div class="text-center">
-          <i-carbon-machine-learning-model class="text-5xl text-green-400 inline-block"/>
-          <i-carbon-arrow-right class="text-2xl text-gray-400 mx-2 inline-block"/>
-          <i-carbon-tool-kit class="text-5xl text-purple-400 inline-block"/>
-          <p class="mt-2 text-sm text-gray-300">LLM → MCP Servers</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!--
-Speaker notes:
-
-The MCP Client is much more than a simple message router - it's a sophisticated middleware component that handles the complete lifecycle of interactions between host applications and MCP servers.
-
-Key points to emphasize:
-- The client manages both the connection to LLMs like Claude and to MCP servers
-- It orchestrates tool execution, maintaining context across complex workflows
-- It provides essential error handling and resource management
-- It abstracts away the complexity of different server implementations
-- It serves as a centralized coordination point for the entire MCP ecosystem
+- The Client is what manages the conversations between the host app and the servers.
+- It is much more than a simple message router though
+- It orchestrates the entire Protocol
 -->
-
-
 
 ---
 layout: default
@@ -653,18 +720,19 @@ clicks: 1
 <div 
   class="transition-all duration-500 ease-in-out"
   :class="{
-    'mt-6': $slidev.nav.clicks > 0,
-    'mt-40': $slidev.nav.clicks === 0
+    'mt-8': $slidev.nav.clicks > 0,
+    'mt-28': $slidev.nav.clicks === 0
   }"
 >
-  <div class="relative group">
-    <div class="absolute -inset-0.5 bg-gradient-to-r from-yellow-500 to-red-500 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
-    <div class="relative p-4 bg-gray-900 rounded-lg border border-yellow-500/30">
+  <!-- Enhance top card with larger size and more prominent effects -->
+  <div class="relative group transform transition-all duration-500 hover:scale-[1.01]">
+    <div class="absolute -inset-0.5 bg-gradient-to-r from-yellow-500 to-red-500 rounded-lg blur opacity-40 group-hover:opacity-100 group-hover:blur-md transition duration-1000"></div>
+    <div class="relative p-6 bg-gray-900 rounded-lg border-2 border-yellow-500/40 shadow-xl">
       <div class="grid grid-cols-3 gap-0 text-sm">
         <div class="text-center border-r border-gray-700 pr-4">
-          <div class="mb-1 text-gray-400 text-[10px] uppercase tracking-wide">Model-controlled</div>
-          <i-carbon-tool-kit class="text-3xl mb-2 mx-auto text-yellow-400"/> 
-          <div class="text-gray-200 font-semibold">Tools</div>
+          <div class="mb-1 text-gray-400 text-[10px] uppercase tracking-wide">Model Controlled</div>
+          <i-carbon-tool-kit class="text-4xl mb-2 mx-auto text-yellow-400"/> 
+          <div class="text-gray-200 font-semibold text-lg">Tools</div>
           <div class="text-xs text-gray-400">Functions invoked by the model</div>
           <div class="mt-3 space-y-1">
             <div class="bg-gray-800 rounded px-3 py-1 text-gray-300">Retrieve / search</div>
@@ -673,9 +741,9 @@ clicks: 1
           </div>
         </div>
         <div class="text-center border-r border-gray-700 px-4">
-          <div class="mb-1 text-gray-400 text-[10px] uppercase tracking-wide">Application-controlled</div>
-          <i-carbon-document class="text-3xl mb-2 mx-auto text-yellow-400"/> 
-          <div class="text-gray-200 font-semibold">Resources</div>
+          <div class="mb-1 text-gray-400 text-[10px] uppercase tracking-wide">Application Controlled</div>
+          <i-carbon-document class="text-4xl mb-2 mx-auto text-yellow-400"/> 
+          <div class="text-gray-200 font-semibold text-lg">Resources</div>
           <div class="text-xs text-gray-400">Data exposed to the application</div>
           <div class="mt-3 space-y-1">
             <div class="bg-gray-800 rounded px-3 py-1 text-gray-300">Files</div>
@@ -684,9 +752,9 @@ clicks: 1
           </div>
         </div>
         <div class="text-center pl-4">
-          <div class="mb-1 text-gray-400 text-[10px] uppercase tracking-wide">User-controlled</div>
-          <i-carbon-text-creation class="text-3xl mb-2 mx-auto text-yellow-400"/> 
-          <div class="text-gray-200 font-semibold">Prompts</div>
+          <div class="mb-1 text-gray-400 text-[10px] uppercase tracking-wide">User Controlled</div>
+          <i-carbon-text-creation class="text-4xl mb-2 mx-auto text-yellow-400"/> 
+          <div class="text-gray-200 font-semibold text-lg">Prompts</div>
           <div class="text-xs text-gray-400">Pre-defined templates for AI interactions</div>
           <div class="mt-3 space-y-1">
             <div class="bg-gray-800 rounded px-3 py-1 text-gray-300">Document Q&A</div>
@@ -699,25 +767,26 @@ clicks: 1
   </div>
 </div>
 
+<!-- Reduce size and visual impact of lower cards -->
 <div 
-  class="mt-8 grid grid-cols-2 gap-8 transition-opacity duration-500"
-  :class="{ 'opacity-0 invisible': $slidev.nav.clicks === 0, 'opacity-100 visible': $slidev.nav.clicks > 0 }"
+  class="mt-6 grid grid-cols-2 gap-6 transition-opacity duration-500 scale-90 opacity-80"
+  :class="{ 'opacity-0 invisible': $slidev.nav.clicks === 0, 'opacity-80 visible': $slidev.nav.clicks > 0 }"
 >
   <div class="relative group">
-    <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-green-500 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
-    <div class="relative p-4 bg-gray-900 rounded-lg border border-blue-500/30">
-      <h3 class="text-xl font-bold mb-4 text-blue-400">Protocol Layer</h3>
-      <div class="space-y-2 text-sm">
-        <div class="flex items-center text-gray-200">
+    <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-green-500 rounded-lg blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+    <div class="relative p-3 bg-gray-900/90 rounded-lg border border-blue-500/20">
+      <h3 class="text-lg font-bold mb-3 text-blue-400">Protocol Layer</h3>
+      <div class="space-y-1 text-xs">
+        <div class="flex items-center text-gray-300">
           <i-carbon-data-share class="mr-2 text-blue-400"/> Message Framing & Routing
         </div>
-        <div class="flex items-center text-gray-200">
+        <div class="flex items-center text-gray-300">
           <i-carbon-connect class="mr-2 text-blue-400"/> Request/Response Management
         </div>
-        <div class="flex items-center text-gray-200">
+        <div class="flex items-center text-gray-300">
           <i-carbon-flow class="mr-2 text-blue-400"/> Communication Patterns
         </div>
-        <div class="flex items-center text-gray-200">
+        <div class="flex items-center text-gray-300">
           <i-carbon-certificate class="mr-2 text-blue-400"/> Versioned Protocol Schemas
         </div>
       </div>
@@ -725,20 +794,20 @@ clicks: 1
   </div>
 
   <div class="relative group">
-    <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
-    <div class="relative p-4 bg-gray-900 rounded-lg border border-purple-500/30">
-      <h3 class="text-xl font-bold mb-4 text-purple-400">Transport Layer</h3>
-      <div class="space-y-2 text-sm">
-        <div class="flex items-center text-gray-200">
+    <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+    <div class="relative p-3 bg-gray-900/90 rounded-lg border border-purple-500/20">
+      <h3 class="text-lg font-bold mb-3 text-purple-400">Transport Layer</h3>
+      <div class="space-y-1 text-xs">
+        <div class="flex items-center text-gray-300">
           <i-carbon-code class="mr-2 text-purple-400"/> JSON-RPC 2.0 Wire Format
         </div>
-        <div class="flex items-center text-gray-200">
+        <div class="flex items-center text-gray-300">
           <i-carbon-data-transformer class="mr-2 text-purple-400"/> Protocol Message Transmission
         </div>
-        <div class="flex items-center text-gray-200">
+        <div class="flex items-center text-gray-300">
           <i-carbon-terminal class="mr-2 text-purple-400"/> Multiple Transport Methods
         </div>
-        <div class="flex items-center text-gray-200">
+        <div class="flex items-center text-gray-300">
           <i-carbon-plug class="mr-2 text-purple-400"/> Extensible Channel System
         </div>
       </div>
@@ -747,24 +816,29 @@ clicks: 1
 </div>
 
 <!--
-Speaker notes:
-
-The Protocol Layer and Transport Layer have distinct responsibilities in MCP:
-
-- Protocol Layer: Handles the logical aspects of communication
-  - Message framing: Structures messages in a consistent format
-  - Request/response linking: Ensures requests are matched with corresponding responses
-  - Communication patterns: Manages high-level communication flows between clients and servers
-  - Schema validation: Validates messages against versioned schemas
-
-- Transport Layer: Handles the physical communication mechanisms
-  - Implements specific transport methods (Stdio, HTTP/SSE, WebSockets)
-  - Uses JSON-RPC 2.0 as the wire format for message exchange
-  - Converts MCP protocol messages into JSON-RPC format for transmission
-  - Converts received JSON-RPC messages back into MCP protocol messages
-
-Think of the Protocol Layer as defining "what" messages mean, while the Transport Layer determines "how" they are delivered. The Protocol Layer is transport-agnostic, allowing MCP to work across different communication channels.
+- Servers are what most people think about
+- Contains the tools and data we're trying to connect
+- Most people think of tools but there is more
+- 3 Main primitives for servers
+- CONTROLL TYPES IMPORTANT!
+- Prompts are very powerful and underutilised
+- One thing thats great about mcp is it allows for determinism from AI
+- Bring back to Prompts are very good for this
 -->
+
+---
+layout: full
+---
+
+# MCP Flow
+
+<div class="flex items-center justify-center w-full h-full mt-[-20px]">
+  <img 
+    src="/diagrams/workbook_remap_diagram.gif" 
+    class="max-w-full max-h-full object-contain"
+    alt="MCP Data Flow Diagram"
+  />
+</div>
 
 ---
 layout: default
@@ -809,16 +883,6 @@ layout: default
   </div>
 </div>
 
-<!--
-Speaker notes:
-This slide illustrates a real-world example of MCP data flow between components.
-Key points to highlight:
-- Client-server communication
-- Tool invocation process
-- Context and data sharing
-- Security boundaries
--->
-
 ---
 layout: center
 class: "text-center"
@@ -838,7 +902,11 @@ class: "text-center"
 </div>
 
 <!--
-This slide demonstrates MCP in action with a real-world example. The video shows how sampling enables sophisticated agentic behaviors while maintaining user control.
+BEFORE PLAYING:
+- Solving a problem you guys have
+- Prompts prevent user issues - more reproducible work flows
+
+- Talk through, stop video and show whats happening
 -->
 
 ---
@@ -853,13 +921,6 @@ class: text-center
     <span class="text-gray-900">MCP Servers</span>
   </h1>
 </div>
-
-<!--
-This slide serves as a bold transition to the implementation section, emphasizing that developers can create their own custom MCP servers tailored to their specific needs.
--->
-
-
-
 
 ---
 layout: two-cols
