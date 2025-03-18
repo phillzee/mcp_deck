@@ -47,3 +47,8 @@ components.d.ts
 # Coverage directory used by tools like istanbul
 coverage
 *.lcov 
+
+# Files
+slides.md-e
+slides.md-e.bak
+slides.md-e.bak2

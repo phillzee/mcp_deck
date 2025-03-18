@@ -91,10 +91,13 @@ image: 'diagrams/AI_Landscape.jpg'
 
 <!--
 - Big issue in gen AI
-- How do we connect AI apps to external ones.
-- Lots of providers, 
-- More complex app needs, growing ambition and increased capabilities
-- data protection
+- How do we connect AI our AI to apps to give it functionality
+- Lots of providers
+- Currently there is no standard - its like if APIs were all written differently
+- One tool integration - ok 
+- But as ambition grows for what AI can do, we need multiple tools to work together
+- This gets messy and complex
+- especially while maintaining data protection
 -->
 
 ---
@@ -211,6 +214,8 @@ transition: slide-up
 <!--
 - What does MCP Do?
 - MCP connects AI apps and agents, to tools and data sources
+- But really MCP is letting AI interact meaningfully with the rest of the world
+- Instead of saying "I can't send that email..."
 - Is is for AI what REST API was for Web dev
 - Can also think like USB-C
 -->
@@ -341,6 +346,7 @@ layout: default
 
 <!--
 - Example of Apps getting made using MCP
+- Managed MCP Servers
 -->
 
 ---
@@ -357,6 +363,11 @@ class: "text-center"
     alt="MCP Data Flow Diagram"
   />
 </div>
+
+<!--
+- This is just the tip of the iceberg
+- Deep analysis and insights
+-->
 
 ---
 layout: fact
@@ -822,7 +833,7 @@ clicks: 1
 - 3 Main primitives for servers
 - CONTROLL TYPES IMPORTANT!
 - Prompts are very powerful and underutilised
-- One thing thats great about mcp is it allows for determinism from AI
+- One thing thats great about mcp is it allows for determinism from AI instead of probabilistic 
 - Bring back to Prompts are very good for this
 -->
 
