@@ -1,0 +1,80 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.1.0">
+  <diagram name="Page-1" id="N_4eb0Z94qnCmNqY57Ic">
+    <mxGraphModel dx="1434" dy="785" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YDrNdsempB48Uay3_GOA-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;flowAnimation=1;curved=1;" edge="1" parent="1" source="YDrNdsempB48Uay3_GOA-1" target="YDrNdsempB48Uay3_GOA-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YDrNdsempB48Uay3_GOA-8" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Local Connection&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="YDrNdsempB48Uay3_GOA-5">
+          <mxGeometry x="-0.1894" y="-7" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YDrNdsempB48Uay3_GOA-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;flowAnimation=1;curved=1;" edge="1" parent="1" source="YDrNdsempB48Uay3_GOA-1" target="YDrNdsempB48Uay3_GOA-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YDrNdsempB48Uay3_GOA-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;flowAnimation=1;curved=1;" edge="1" parent="1" source="YDrNdsempB48Uay3_GOA-1" target="YDrNdsempB48Uay3_GOA-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YDrNdsempB48Uay3_GOA-1" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Claude_AI_logo.svg/1280px-Claude_AI_logo.svg.png;" vertex="1" parent="1">
+          <mxGeometry x="160" y="480" width="186.05" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YDrNdsempB48Uay3_GOA-2" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;MCP Server&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="80" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YDrNdsempB48Uay3_GOA-3" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;MCP Server&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="340" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YDrNdsempB48Uay3_GOA-4" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;MCP Server&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="210" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YDrNdsempB48Uay3_GOA-9" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Local Connection&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="360.0030950403036" y="399.9983359410901" as="geometry" />
+        </mxCell>
+        <mxCell id="YDrNdsempB48Uay3_GOA-10" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Local Connection&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="160.0030950403036" y="399.9983359410901" as="geometry" />
+        </mxCell>
+        <mxCell id="YDrNdsempB48Uay3_GOA-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=1;flowAnimation=1;" edge="1" parent="1" source="YDrNdsempB48Uay3_GOA-11" target="YDrNdsempB48Uay3_GOA-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YDrNdsempB48Uay3_GOA-20" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;One Connection&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="YDrNdsempB48Uay3_GOA-13">
+          <mxGeometry x="-0.2121" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YDrNdsempB48Uay3_GOA-11" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Claude_AI_logo.svg/1280px-Claude_AI_logo.svg.png;" vertex="1" parent="1">
+          <mxGeometry x="720" y="480" width="186.05" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YDrNdsempB48Uay3_GOA-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=1;flowAnimation=1;" edge="1" parent="1" source="YDrNdsempB48Uay3_GOA-12" target="YDrNdsempB48Uay3_GOA-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YDrNdsempB48Uay3_GOA-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;flowAnimation=1;curved=1;" edge="1" parent="1" source="YDrNdsempB48Uay3_GOA-12" target="YDrNdsempB48Uay3_GOA-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YDrNdsempB48Uay3_GOA-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=1;flowAnimation=1;" edge="1" parent="1" source="YDrNdsempB48Uay3_GOA-12" target="YDrNdsempB48Uay3_GOA-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YDrNdsempB48Uay3_GOA-12" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Composio Gateway&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="773.03" y="334" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YDrNdsempB48Uay3_GOA-14" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;MCP Server&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="623.03" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YDrNdsempB48Uay3_GOA-15" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;MCP Server&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="883.03" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YDrNdsempB48Uay3_GOA-16" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;MCP Server&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="753.03" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YDrNdsempB48Uay3_GOA-21" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#000000;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="519" y="334" as="sourcePoint" />
+            <mxPoint x="569" y="334" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
