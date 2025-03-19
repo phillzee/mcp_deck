@@ -514,7 +514,7 @@ layout: fact
 
 <div class="text-center">
   <h1 class="text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
-    A Real World Problem
+    The Tableau Mapping Problem
   </h1>
   <p class="mt-4 text-xl opacity-60">AND</p>
   <p class="mt-2 text-2xl opacity-80">How We Fixed it With MCP</p>
@@ -543,7 +543,7 @@ layout: center
 class: "text-center"
 ---
 
-# MCP in Action: Demo
+# The Tableua Mapping Problem: Demo
 
 <div class="flex justify-center items-center mt-4">
   <div class="relative w-[800px] h-[450px] bg-gray-900 rounded-lg overflow-hidden border-2 border-gray-700 flex items-center justify-center">
