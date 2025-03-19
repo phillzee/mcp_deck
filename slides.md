@@ -543,7 +543,7 @@ layout: center
 class: "text-center"
 ---
 
-# The Tableua Mapping Problem: Demo
+# The Tableau Mapping Problem: Demo
 
 <div class="flex justify-center items-center mt-4">
   <div class="relative w-[800px] h-[450px] bg-gray-900 rounded-lg overflow-hidden border-2 border-gray-700 flex items-center justify-center">
@@ -578,57 +578,58 @@ class: text-center
 </div>
 
 ---
-layout: two-cols
+layout: center
 ---
 
 # Prompt Listing
 
-<div class="absolute inset-0 mt-20 z-0 flex items-center justify-center overflow-hidden">
+<div class="flex items-center justify-center">
   <img 
     src="/diagrams/tool_list.png" 
-    class="max-w-[97%] max-h-[97%] object-contain"
-    alt="MCP Flow in Composio Diagram"
+    class="max-h-[85vh] max-w-[90%] object-contain shadow-xl border border-gray-200/20 rounded-lg"
+    alt="Prompt Listing Screenshot"
   />
 </div>
 
 ---
-layout: two-cols
+layout: center
 ---
 
 # Prompt Calling
 
-<div class="absolute inset-0 mt-20 z-0 flex items-center justify-center overflow-hidden">
+<div class="flex items-center justify-center">
   <img 
     src="/diagrams/tool_call.png" 
-    class="max-w-[97%] max-h-[97%] object-contain"
-    alt="MCP Flow in Composio Diagram"
+    class="max-h-[85vh] max-w-[90%] object-contain shadow-xl border border-gray-200/20 rounded-lg"
+    alt="Prompt Calling Screenshot"
   />
 </div>
 
 ---
-layout: two-cols
+layout: center
 ---
+
 # Tool Listing
 
-<div class="absolute inset-0 mt-20 z-0 flex items-center justify-center overflow-hidden">
+<div class="flex items-center justify-center">
   <img 
     src="/diagrams/prompt_list.png" 
-    class="max-w-[97%] max-h-[97%] object-contain"
-    alt="MCP Flow in Composio Diagram"
+    class="max-h-[85vh] max-w-[90%] object-contain shadow-xl border border-gray-200/20 rounded-lg"
+    alt="Tool Listing Screenshot"
   />
 </div>
 
 ---
-layout: two-cols
+layout: center
 ---
 
 # Tool Calling
 
-<div class="absolute inset-0 mt-20 z-0 flex items-center justify-center overflow-hidden">
+<div class="flex items-center justify-center">
   <img 
     src="/diagrams/prompt_get.png" 
-    class="max-w-[97%] max-h-[97%] object-contain"
-    alt="MCP Flow in Composio Diagram"
+    class="max-h-[60vh] max-w-[90%] object-contain shadow-xl border border-gray-200/20 rounded-lg"
+    alt="Tool Calling Screenshot"
   />
 </div>
 
