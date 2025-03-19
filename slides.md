@@ -337,6 +337,7 @@ layout: default
 - Example of Apps getting made using MCP
 - Managed MCP Servers
 - Instantly Connect to 100+ Managed MCP Servers with Built-In Auth
+- SSE Requirment removed allowing for stateless servers so long term connection not necessary
 -->
 
 ---
@@ -355,6 +356,7 @@ class: "text-center"
 </div>
 
 <!--
+- Example of how external data can be leveraged by claude
 - This is just the tip of the iceberg
 - Deep analysis and insights
 -->
@@ -506,6 +508,8 @@ transition: slide-up
 - The Client is what manages the conversations between the host app and the servers.
 - It is much more than a simple message router though
 - It orchestrates the entire Protocol
+- Originally only studio and HTTP+SSE so constant connection
+- However just released stateless ability
 -->
 
 ---
@@ -519,6 +523,12 @@ layout: fact
   <p class="mt-4 text-xl opacity-60">AND</p>
   <p class="mt-2 text-2xl opacity-80">How We Fixed it With MCP</p>
 </div>
+
+<!--
+- How can MCP used in real life to benefit professionally?
+- Dhruv mentioned an issue you guys were having with renaming dimensions in Tableau
+- So we made a custom mcp server
+-->
 
 ---
 layout: full
