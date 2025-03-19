@@ -40,7 +40,7 @@ mdc: true
 
 ---
 layout: image-right
-image: 'diagrams/AI_Landscape.jpg'
+image: '/diagrams/AI_Landscape.jpg'
 ---
 
 # The Integration Issue
