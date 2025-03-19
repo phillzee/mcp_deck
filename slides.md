@@ -227,7 +227,7 @@ transition: slide-up
 
 ---
 layout: image-right
-image: 'servers_screenshot.png'
+image: '/diagrams/servers_screenshot.png'
 ---
 
 # Growing MCP Support
